@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+<link rel="stylesheet" href="style.css">
+<script type="text/javascript">
+function admin(){
+var ad=document.getElementById("admin").value;
+if(ad=="stud")
+	  {
+	    window.location.replace("new_stud.jsp");
+	  }
+else if(ad=="tea")
+	{
+	   window.location.replace("new_tea.jsp");
+	}
+else if(ad=="can1")
+{
+  window.location.replace("stud_del.jsp");
+}
+else if(ad=="can2")
+{
+ window.location.replace("tea_del.jsp");
+}
+}
+function details(){
+	var ad=document.getElementById("details").value;
+	if(ad=="stud_de")
+		  {
+		    window.location.replace("stud_details.jsp");
+		  }
+	if(ad=="tea_de")
+		{
+		   window.location.replace("tea_details.jsp");
+		}
+	}
+function attendance(){
+	var ad=document.getElementById("attendance").value;
+	if(ad=="stud_at")
+		  {
+		    window.location.replace("stud_attendance.jsp");
+		  }
+	if(ad=="tea_at")
+		{
+		   window.location.replace("tea_attendance.jsp");
+		}
+	}
+
+function attendance_details(){
+	var ad=document.getElementById("attendance_details").value;
+	if(ad=="stud_at_de")
+		  {
+		    window.location.replace("stud_attendance_details.jsp");
+		  }
+	if(ad=="tea_at_de")
+		{
+		   window.location.replace("tea_attendance_details.jsp");
+		}
+	}
+function examination(){
+	var ad=document.getElementById("examination").value;
+	if(ad=="exam_de")
+		  {
+		    window.location.replace("exam_marks.jsp");
+		  }
+	if(ad=="en_marks")
+		{
+		   window.location.replace("enter_marks.jsp");
+		}
+	}
+function update(){
+	var ad=document.getElementById("update").value;
+	if(ad=="stud_up")
+		  {
+		    window.location.replace("stud_up.jsp");
+		  }
+	if(ad=="tea_up")
+		{
+		   window.location.replace("tea_up.jsp");
+		}
+	}
+function fee(){
+	var ad=document.getElementById("fee").value;
+	if(ad=="fee_de")
+		  {
+		    window.location.replace("fee_de.jsp");
+		  }
+
+	}
+	function log_out()
+	{
+		window.location.replace("login.jsp");
+	}
+
+</script>
+
+</head>
+<body >
+
+<div style="width:100%;">
+  <select id="admin" style="color:blue;height:20px;border:none;" onclick="admin()">
+  <option><b>Admin</b></option>
+     
+  <option value="stud">New Student</option>
+  <option value="tea">New Faculty</option>
+   <option value="can1">Delete Student</option>
+  <option value="can2">Delete Faculty</option>
+
+  </select>
+  
+    <select id="details" style="color:red;border:none;" onclick="details()">
+  <option><b>Details</b></option>
+  <option value="stud_de">Student Details</option>
+  <option value="tea_de">Faculty Details</option>
+  </select>
+  
+  
+    <select id="attendance" style="color:blue;border:none;" onclick="attendance()">
+  <option><b>Attendance</b></option>
+  <option value="stud_at">Student Attendance</option>
+  <option value="tea_at">Faculty Attendance</option>
+  </select>
+  
+  
+    <select id="attendance_details" style="color:red;border:none;" onclick="attendance_details()">
+  <option><b>Attendance Details</b></option>
+  <option value="stud_at_de">Student  Atten. Details</option>
+  <option value="tea_at_de">Faculty Atten. Details</option>
+  </select>
+      <select id="examination" style="color:blue;border:none;" onclick="examination()">
+  <option><b>Examination</b></option>
+  <option value="exam_de">Examination Marks</option>
+  <option value="en_marks">Enter Marks</option>
+  </select>
+     <select id="update" style="color:red;border:none;" onclick="update()">
+  <option><b>Update</b></option>
+  <option value="stud_up">Student's Details</option>
+  <option value="tea_up">Teacher's Details </option>
+  </select>
+  
+       <select id="fee" style="color:blue;border:none;" onclick="fee()">
+  <option><b>Fee Details</b></option>
+  <option value="fee_de">Fee Structure</option>
+
+  </select>
+ 
+ <button type="button" onclick="log_out()">Log Out</button>
+  <img src="uni.jpg" >
+  
+</div>
+</body>
+</html>

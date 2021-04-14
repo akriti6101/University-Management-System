@@ -1,0 +1,29 @@
+.out
+{
+	position:Absolute;
+	height:500px;
+	width:100%;
+}
+.in
+{
+	position:Absolute;
+	height:100px;
+	width:100%;
+	left:150px;
+	top:200px;
+}
+
+.b1,.b2,.b3
+{
+	margin-left:50px;
+	width:200px;background-color:black;
+	color:white;
+	height:35px;
+}
+img
+{
+	position:absolute;
+	top:40px;left:0px;
+	width:95%;height:80%;background-size:cover;
+	
+}
